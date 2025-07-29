@@ -1,4 +1,5 @@
-'use client';
+'use client'
+
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Header from '@/components/Header'
@@ -9,6 +10,7 @@ import PricingCard from '@/components/PricingCard'
 import TestimonialSlide from '@/components/TestimonialSlide'
 import Accordion from '@/components/Accordion'
 import Footer from '@/components/Footer'
+import AnimatedMesh from '@/components/AnimatedMesh' // ✅ Ensure this exists
 import { features } from '@/constants/features'
 import { pricingPlans } from '@/constants/pricing'
 import { testimonials } from '@/constants/testimonials'
@@ -25,10 +27,11 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      
+
       <main className="flex-1">
-        {/* Hero Section */}
+        {/* Hero Section with AnimatedMesh */}
         <section className="relative overflow-hidden bg-gradient-to-br from-indigo-50 via-purple-50 to-blue-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-900 py-20">
+          <AnimatedMesh />
           <Container className="relative z-10">
             <div className="max-w-3xl mx-auto text-center">
               <motion.h1
@@ -39,7 +42,7 @@ export default function Home() {
               >
                 <span className="text-gradient">Run smarter ad campaigns</span> with AI
               </motion.h1>
-              
+
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -48,7 +51,7 @@ export default function Home() {
               >
                 Launch ads 10x faster with AI — from strategy to execution.
               </motion.p>
-              
+
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -64,10 +67,6 @@ export default function Home() {
               </motion.div>
             </div>
           </Container>
-          
-          <div className="absolute top-0 left-0 w-full h-full opacity-10 dark:opacity-5">
-            <div className="absolute inset-0 bg-[url('/grid.svg')] bg-[length:100px_100px]"></div>
-          </div>
         </section>
 
         {/* Features Section */}
@@ -81,7 +80,7 @@ export default function Home() {
                 Our AI-powered platform handles the heavy lifting so you can focus on growth.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {features.map((feature, index) => (
                 <motion.div
@@ -109,7 +108,7 @@ export default function Home() {
                 Choose the plan that fits your needs. No hidden fees.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {pricingPlans.map((plan, index) => (
                 <motion.div
@@ -118,7 +117,7 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className={plan.featured ? "lg:mt-[-20px]" : ""}
+                  className={plan.featured ? 'lg:mt-[-20px]' : ''}
                 >
                   <PricingCard {...plan} />
                 </motion.div>
@@ -135,19 +134,21 @@ export default function Home() {
                 Trusted by marketing teams worldwide
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-400">
-                Don&#39;t just take our word for it. Here&#39;s what our customers say.
+                Don&apos;t just take our word for it. Here&apos;s what our customers say.
               </p>
             </div>
-            
+
             <div className="max-w-4xl mx-auto">
               <TestimonialSlide {...testimonials[activeTestimonial]} />
-              
+
               <div className="flex justify-center mt-8 space-x-2">
                 {testimonials.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => setActiveTestimonial(index)}
-                    className={`w-3 h-3 rounded-full ${index === activeTestimonial ? 'bg-indigo-600' : 'bg-gray-300 dark:bg-gray-600'}`}
+                    className={`w-3 h-3 rounded-full ${
+                      index === activeTestimonial ? 'bg-indigo-600' : 'bg-gray-300 dark:bg-gray-600'
+                    }`}
                     aria-label={`Go to testimonial ${index + 1}`}
                   />
                 ))}
@@ -164,10 +165,10 @@ export default function Home() {
                 Frequently asked questions
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-400">
-                Can&#39;t find what you&#39;re looking for? Contact our support team.
+                Can&apos;t find what you&apos;re looking for? Contact our support team.
               </p>
             </div>
-            
+
             <div className="max-w-3xl mx-auto">
               {faqs.map((faq, index) => (
                 <Accordion
@@ -204,7 +205,7 @@ export default function Home() {
           </Container>
         </section>
       </main>
-      
+
       <Footer />
     </div>
   )

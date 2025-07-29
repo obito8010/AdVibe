@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@react-spring/web": "^10.0.1",
     "framer-motion": "^12.23.11",
     "next": "15.4.4",
     "react": "19.1.0",
