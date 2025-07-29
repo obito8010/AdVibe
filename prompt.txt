@@ -1,0 +1,109 @@
+Prompt: Modern AI SaaS Landing Page for Internship Test
+I’m building a production-ready, visually stunning SaaS landing page for a fictional AI-powered marketing platform called AdVibe. This is for an internship test at ADmyBRAND.com for a "Vibe Coder" role — so visual appeal, component reusability, and real-world usability are crucial.
+Project Overview
+Product Name: AdVibe
+Tagline: “Launch ads 10x faster with AI — from strategy to execution.”
+Audience: Marketing teams, startups, ad agencies
+Goal: Show off my frontend design skills, Next.js + TypeScript knowledge, Tailwind UI, and clean component architecture.
+Pages/Sections to Include
+Hero Section:
+
+Bold headline and subheading
+
+CTA button (e.g., "Try for Free")
+
+Gradient background
+
+Lottie animation or video loop (optional)
+
+Features Section:
+
+6+ cards with icons and descriptions
+
+Use reusable FeatureCard components
+
+Pricing Section:
+
+3 pricing tiers
+
+Feature comparison
+
+Highlight “Most Popular” tier
+
+Testimonials Carousel:
+
+Reviews with user avatars
+
+Smooth transitions
+
+FAQ Section:
+
+Collapsible accordion
+
+Clean, animated UI
+
+Footer:
+
+Logo, quick links, contact info, social icons
+
+Bonus (Optional):
+Interactive pricing calculator (team size → cost)
+Blog/Resources Section
+Demo video embed
+Framer Motion transitions
+Technical Stack
+Framework: Next.js 14+ (App Router)
+
+Language: TypeScript
+
+Styling: Tailwind CSS with gradients and modern UI
+
+Components: Build 8+ reusable components like:
+
+Button, Card, Accordion, Modal, PricingCard, FeatureCard, TestimonialSlide, etc.
+
+Animations: Use Framer Motion for transitions, hover, entrance animations
+
+Form Handling:
+
+Contact form with validation
+
+Use React Hook Form or native handling
+
+Image Optimization:
+
+Next.js <Image /> for hero section and testimonials
+
+Responsive Design:
+
+Mobile-first, responsive breakpoints, touch-friendly UI
+Color Palette & Design System
+Element	Value
+Primary	#6366F1 (Indigo), #8B5CF6 (Purple), #3B82F6 (Blue)
+Accent	#22C55E (Green), #F87171 (Coral)
+Background	#F9FAFB (light) / #0F172A (dark)
+Typography	Inter / Sora / DM Sans
+Effects	Gradient overlays, glassmorphism, drop shadows
+Evaluation Criteria (based on test description)
+Speed & AI Usage – Efficiently use AI tools for boilerplate and layout scaffolding.
+
+Beautiful UI Design – Prioritize spacing, font harmony, and visual consistency.
+
+Component Reusability – Split UI into modular, clean, maintainable components.
+
+Problem Solving – Implement bonus features like interactive pricing calculator.
+ Use Cases / Copy Examples
+Hero Headline: "Run smarter ad campaigns with AI."
+
+Feature: "AI-powered keyword optimization"
+
+Testimonial: "AdVibe helped us cut campaign costs by 40%."
+
+Additional Notes
+Prioritize clean layout and intuitive navigation.
+
+Deploy on Vercel if needed, or export as a static site.
+
+Optimize for Lighthouse score, responsive design, and accessibility (a11y).
+Objective
+Build a modern, fast-loading, beautiful SaaS landing page in 2 days, using Next.js + TypeScript + Tailwind CSS, with a clean component structure, responsive design, and smooth UI animations — showcasing creativity, frontend strength, and attention to UX.explain each step from scratch and give code one by one and give the full code
